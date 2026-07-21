@@ -69,11 +69,17 @@ document.addEventListener("keydown", (event) => {
     ArrowDown: { x: 0, y: 1 },
     ArrowLeft: { x: -1, y: 0 },
     ArrowRight: { x: 1, y: 0 },
+    w: { x: 0, y: -1 },
+    s: { x: 0, y: 1 },
+    a: { x: -1, y: 0 },
+    d: { x: 1, y: 0 },
   };
 
-  if (moves[event.key]) {
+  const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
+
+  if (moves[key]) {
     event.preventDefault();
-    setDirection(moves[event.key]);
+    setDirection(moves[key]);
   }
 });
 

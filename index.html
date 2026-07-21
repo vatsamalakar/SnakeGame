@@ -38,15 +38,15 @@
       </div>
 
       <div class="game-actions">
-        <p class="control-hint">Use <kbd>&uarr;</kbd><kbd>&darr;</kbd><kbd>&larr;</kbd><kbd>&rarr;</kbd> or swipe to move</p>
+        <p class="control-hint">Use <kbd>&uarr;</kbd><kbd>&darr;</kbd><kbd>&larr;</kbd><kbd>&rarr;</kbd> <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> or swipe to move</p>
         <button class="secondary-button restart-button" id="restart" type="button">Play again</button>
       </div>
 
       <div class="touch-controls" aria-label="Touch controls">
-        <button data-direction="up" aria-label="Move up">&uarr;</button>
-        <button data-direction="left" aria-label="Move left">&larr;</button>
-        <button data-direction="down" aria-label="Move down">&darr;</button>
-        <button data-direction="right" aria-label="Move right">&rarr;</button>
+        <button data-direction="up" aria-label="Move up">&uarr;<span class="key">W</span></button>
+        <button data-direction="left" aria-label="Move left">&larr;<span class="key">A</span></button>
+        <button data-direction="down" aria-label="Move down">&darr;<span class="key">S</span></button>
+        <button data-direction="right" aria-label="Move right">&rarr;<span class="key">D</span></button>
       </div>
     </section>
   </main>
@@ -58,7 +58,7 @@
       <h2 id="instructions-title">How to play</h2>
       <ol>
         <li>Press <strong>Start game</strong> to begin moving.</li>
-        <li>Guide the snake with the arrow keys, swipe gestures, or the on-screen controls.</li>
+        <li>Guide the snake with the arrow keys, WASD keys, swipe gestures, or the on-screen controls.</li>
         <li>Eat red fruit to grow and earn a point. Every 3 points increases the level, speed, and obstacles.</li>
         <li>Do not hit a wall, an obstacle, or your own tail. Try to beat your best score!</li>
       </ol>
